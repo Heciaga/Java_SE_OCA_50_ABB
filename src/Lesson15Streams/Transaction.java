@@ -9,8 +9,8 @@ public class Transaction {
     private TransactionType transactionType;
     private double amount;
     private Priority priority;
-    private int sequenceNumber;
-    private LocalDateTime createdAt;
+    private final int sequenceNumber;
+    private final LocalDateTime createdAt;
 
     public Transaction(int id, String customerName, TransactionType transactionType,
                        double amount, Priority priority,
